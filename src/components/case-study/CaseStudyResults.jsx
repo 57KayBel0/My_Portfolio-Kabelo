@@ -3,7 +3,10 @@ import { FaCheckCircle } from "react-icons/fa";
 
 export default function CaseStudyResults({ caseStudy }) {
   return (
-    <section className="bg-slate-900 py-24">
+    <section
+        id="results"
+        className="bg-slate-900 py-24"
+    >
 
       <div className="container mx-auto px-6 max-w-6xl">
 

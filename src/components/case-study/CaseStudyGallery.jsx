@@ -2,7 +2,10 @@ import { motion } from "framer-motion";
 
 export default function CaseStudyGallery({ caseStudy }) {
   return (
-    <section className="bg-slate-950 py-24">
+    <section
+        id="gallery"
+        className="bg-slate-950 py-24"
+    >
 
       <div className="container mx-auto px-6">
 

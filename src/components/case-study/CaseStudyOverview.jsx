@@ -2,7 +2,10 @@ import { motion } from "framer-motion";
 
 export default function CaseStudyOverview({ caseStudy }) {
   return (
-    <section className="bg-slate-900 py-24">
+    <section
+        id="overview"
+        className="bg-slate-900 py-24"
+    >
 
       <div className="container mx-auto px-6 max-w-6xl">
 

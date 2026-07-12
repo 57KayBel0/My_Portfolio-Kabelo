@@ -3,7 +3,10 @@ import { FaArrowDown } from "react-icons/fa";
 
 export default function CaseStudyArchitecture({ caseStudy }) {
   return (
-    <section className="bg-slate-950 py-24">
+    <section
+        id="architecture"
+        className="bg-slate-950 py-24"
+    >
 
       <div className="container mx-auto px-6 max-w-5xl">
 

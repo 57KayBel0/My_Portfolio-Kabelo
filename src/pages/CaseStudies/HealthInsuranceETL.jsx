@@ -6,9 +6,9 @@ import CaseStudyArchitecture from "../../components/case-study/CaseStudyArchitec
 import CaseStudyResults from "../../components/case-study/CaseStudyResults";
 import CaseStudyGallery from "../../components/case-study/CaseStudyGallery";
 import CaseStudyLessons from "../../components/case-study/CaseStudyLessons";
+import CaseStudySidebar from "../../components/case-study/CaseStudySidebar";
 
 export default function HealthInsuranceETL() {
-
   const caseStudy = caseStudies.find(
     (study) => study.slug === "health-insurance-etl"
   );
@@ -22,27 +22,57 @@ export default function HealthInsuranceETL() {
   }
 
   return (
-    <main className="bg-slate-950 text-white">
+    <main className="relative bg-slate-950 text-white min-h-screen">
+
+      {/* ==========================
+          Sticky Sidebar Navigation
+      ========================== */}
+
+      <CaseStudySidebar />
+
+      {/* ==========================
+          Hero
+      ========================== */}
 
       <CaseStudyHero
         caseStudy={caseStudy}
       />
 
+      {/* ==========================
+          Overview
+      ========================== */}
+
       <CaseStudyOverview
         caseStudy={caseStudy}
       />
+
+      {/* ==========================
+          Architecture
+      ========================== */}
 
       <CaseStudyArchitecture
         caseStudy={caseStudy}
       />
 
+      {/* ==========================
+          Results
+      ========================== */}
+
       <CaseStudyResults
         caseStudy={caseStudy}
       />
 
+      {/* ==========================
+          Gallery
+      ========================== */}
+
       <CaseStudyGallery
         caseStudy={caseStudy}
       />
+
+      {/* ==========================
+          Lessons Learned
+      ========================== */}
 
       <CaseStudyLessons
         caseStudy={caseStudy}

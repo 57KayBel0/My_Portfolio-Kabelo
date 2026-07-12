@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   FaGithub,
   FaExternalLinkAlt,
   FaArrowRight,
+  FaBookOpen,
 } from "react-icons/fa";
 
 import projectDetails from "../../data/projectDetails";
@@ -40,7 +42,7 @@ export default function ProjectCard({ project }) {
           duration-300
         "
       >
-        {/* Image */}
+        {/* ================= IMAGE ================= */}
 
         <div className="overflow-hidden">
           <img
@@ -57,7 +59,7 @@ export default function ProjectCard({ project }) {
           />
         </div>
 
-        {/* Content */}
+        {/* ================= CONTENT ================= */}
 
         <div className="p-8">
 
@@ -120,9 +122,11 @@ export default function ProjectCard({ project }) {
 
           </div>
 
-          {/* Buttons */}
+          {/* ================= ACTION BUTTONS ================= */}
 
           <div className="flex flex-wrap gap-4">
+
+            {/* Existing Modal */}
 
             <button
               onClick={() => setIsOpen(true)}
@@ -143,6 +147,36 @@ export default function ProjectCard({ project }) {
 
               <FaArrowRight />
             </button>
+
+            {/* NEW CASE STUDY BUTTON */}
+
+            {project.id === 1 && (
+              <Link
+                to="/preview/etl"
+                className="
+                  flex
+                  items-center
+                  gap-3
+                  border
+                  border-cyan-500
+                  text-cyan-400
+                  hover:bg-cyan-500
+                  hover:text-white
+                  px-5
+                  py-3
+                  rounded-xl
+                  font-semibold
+                  transition-all
+                  duration-300
+                "
+              >
+                <FaBookOpen />
+
+                Case Study
+              </Link>
+            )}
+
+            {/* GitHub */}
 
             <a
               href={project.github}
@@ -165,6 +199,8 @@ export default function ProjectCard({ project }) {
 
               GitHub
             </a>
+
+            {/* Live Demo */}
 
             {project.demo && (
               <a
