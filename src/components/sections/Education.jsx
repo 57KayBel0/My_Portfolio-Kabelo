@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import education from "../../data/education";
 
 import SectionTitle from "../ui/SectionTitle";
@@ -13,17 +15,35 @@ export default function Education() {
 
         <SectionTitle
           title="Education"
-          subtitle="Academic background and continuous learning."
+          subtitle="My academic background and continuous learning journey in software engineering, data science, and artificial intelligence."
         />
 
-        <div className="space-y-8">
+        <div className="space-y-8 mt-16">
 
-          {education.map((item) => (
+          {education.map((item, index) => (
 
-            <EducationCard
+            <motion.div
               key={item.id}
-              education={item}
-            />
+              initial={{
+                opacity: 0,
+                y: 50,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                duration: 0.6,
+                delay: index * 0.15,
+              }}
+              viewport={{
+                once: true,
+              }}
+            >
+              <EducationCard
+                education={item}
+              />
+            </motion.div>
 
           ))}
 

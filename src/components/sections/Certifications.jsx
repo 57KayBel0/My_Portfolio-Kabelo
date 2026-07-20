@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import certifications from "../../data/certifications";
 
 import SectionTitle from "../ui/SectionTitle";
@@ -13,17 +15,35 @@ export default function Certifications() {
 
         <SectionTitle
           title="Certifications"
-          subtitle="Professional certifications and technical training."
+          subtitle="Professional certifications and continuous learning in software engineering, data science, artificial intelligence, and cloud technologies."
         />
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8 mt-16">
 
-          {certifications.map((certification) => (
+          {certifications.map((certification, index) => (
 
-            <CertificationCard
+            <motion.div
               key={certification.id}
-              certification={certification}
-            />
+              initial={{
+                opacity: 0,
+                y: 40,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                duration: 0.6,
+                delay: index * 0.15,
+              }}
+              viewport={{
+                once: true,
+              }}
+            >
+              <CertificationCard
+                certification={certification}
+              />
+            </motion.div>
 
           ))}
 

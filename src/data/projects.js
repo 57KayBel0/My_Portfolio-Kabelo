@@ -1,6 +1,7 @@
 const projects = [
   {
     id: 1,
+    slug: "health-insurance-etl",
     featured: true,
     title: "Health Insurance ETL Pipeline",
     category: "Data Engineering",
@@ -8,7 +9,7 @@ const projects = [
     description:
       "Designed and implemented an end-to-end ETL pipeline that ingests healthcare insurance datasets, transforms the data, loads it into PostgreSQL, and models it using dbt for analytics.",
 
-    image: "/images/projects/etl.png",
+    image: "/images/projects/health-insurance-etl-cover.png",
 
     github:
       "https://github.com/57KayBel0/Data_Engineering_Assessment.KM",
@@ -27,7 +28,9 @@ const projects = [
   },
 
   {
+
     id: 2,
+    slug: "loan-eligibility-prediction",
     featured: true,
     title: "Loan Eligibility Prediction",
     category: "Machine Learning",
@@ -54,6 +57,7 @@ const projects = [
 
   {
     id: 3,
+    slug: "movie-ratings-analysis",
     featured: true,
     title: "Movie Ratings Analysis",
     category: "Data Analysis",
@@ -79,6 +83,7 @@ const projects = [
 
   {
     id: 4,
+    slug: "smart-truck-route-planner",
     featured: true,
     title: "Smart Truck Route Planner",
     category: "Full Stack Development",
@@ -106,6 +111,7 @@ const projects = [
 
   {
     id: 5,
+    slug: "bank-fraud-detection",
     featured: true,
     title: "Bank Fraud Detection",
     category: "Machine Learning",
@@ -132,6 +138,7 @@ const projects = [
 
   {
     id: 6,
+    slug: "iris-data-exploration",
     featured: true,
     title: "Iris Data Exploration",
     category: "Data Analysis",
@@ -158,6 +165,7 @@ const projects = [
 
   {
     id: 7,
+    slug: "breast-cancer-model-evaluation",
     featured: true,
     title: "Breast Cancer Model Evaluation",
     category: "Machine Learning",

@@ -18,10 +18,10 @@ const experience = [
     ],
 
     achievements: [
-      "Built four end-to-end data science projects",
-      "Performed exploratory data analysis",
-      "Developed classification models",
-      "Evaluated machine learning models",
+      "Built four end-to-end machine learning projects from data collection to evaluation.",
+      "Performed exploratory data analysis to identify patterns and business insights.",
+      "Developed and evaluated classification models using Scikit-Learn.",
+      "Created clear visualizations to communicate analytical findings.",
     ],
   },
 
@@ -44,9 +44,10 @@ const experience = [
     ],
 
     achievements: [
-      "Built RESTful APIs",
-      "Developed responsive frontend interfaces",
-      "Integrated backend and database services",
+      "Designed and implemented RESTful APIs for scalable client-server communication.",
+      "Developed responsive React interfaces for an improved user experience.",
+      "Integrated backend services with PostgreSQL databases.",
+      "Collaborated on production-ready software using Git-based version control.",
     ],
   },
 ];

@@ -6,6 +6,8 @@ const education = [
     period: "2024 – Present",
     status: "In Progress",
     location: "South Africa",
+    description:
+      "Currently pursuing a degree focused on mathematics, algorithms, computer science, software engineering, and data-driven problem solving.",
   },
 
   {
@@ -15,6 +17,8 @@ const education = [
     period: "Completed",
     status: "Completed",
     location: "Remote",
+    description:
+      "Completed practical projects in machine learning, financial analytics, predictive modeling, and data science using Python.",
   },
 
   {
@@ -24,6 +28,19 @@ const education = [
     period: "Completed",
     status: "Completed",
     location: "Remote",
+    description:
+      "Completed an intensive software engineering program covering backend development, frontend development, databases, algorithms, and system design.",
+  },
+
+  {
+    id: 4,
+    institution: "Coursera",
+    qualification: "Data Science Professional Certificate",
+    period: "Completed",
+    status: "Completed",
+    location: "Remote",
+    description:
+      "Completed professional training in data analysis, visualization, statistics, machine learning, and modern data science tools.",
   },
 ];
 

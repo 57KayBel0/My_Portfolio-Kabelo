@@ -212,7 +212,8 @@ export default function Contact() {
               <div className="flex flex-col gap-5">
 
                 <a
-                  href="/resume.pdf"
+                  href="/resume/Kabelo_Makgae_Resume.pdf"
+                  download="Kabelo_Makgae_Resume.pdf"
                   className="flex justify-center items-center gap-3 bg-cyan-500 hover:bg-cyan-600 py-4 rounded-xl font-semibold transition"
                 >
                   <FaDownload />

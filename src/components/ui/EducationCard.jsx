@@ -4,16 +4,21 @@ import Badge from "./Badge";
 export default function EducationCard({ education }) {
   return (
     <Card>
-      <div className="flex justify-between items-start flex-wrap">
 
-        <div>
+      <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6">
 
-          <h3 className="text-2xl font-bold">
+        <div className="flex-1">
+
+          <h3 className="text-2xl font-bold mb-2">
             {education.qualification}
           </h3>
 
-          <p className="text-cyan-400 mt-2">
+          <p className="text-cyan-400 text-lg mb-6">
             {education.institution}
+          </p>
+
+          <p className="text-slate-300 leading-7">
+            {education.description}
           </p>
 
         </div>
@@ -24,15 +29,27 @@ export default function EducationCard({ education }) {
 
       </div>
 
-      <div className="mt-6 text-slate-400">
+      <div className="grid md:grid-cols-2 gap-6 mt-8">
 
-        <p>
-          <strong>Period:</strong> {education.period}
-        </p>
+        <div>
+          <h4 className="text-cyan-400 font-semibold mb-2">
+            Period
+          </h4>
 
-        <p>
-          <strong>Location:</strong> {education.location}
-        </p>
+          <p className="text-slate-400">
+            {education.period}
+          </p>
+        </div>
+
+        <div>
+          <h4 className="text-cyan-400 font-semibold mb-2">
+            Location
+          </h4>
+
+          <p className="text-slate-400">
+            {education.location}
+          </p>
+        </div>
 
       </div>
 

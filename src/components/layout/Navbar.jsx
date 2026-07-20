@@ -118,13 +118,13 @@ export default function Navbar() {
             )}
           </button>
 
-          <a
-            href="/resume.pdf"
-            className="flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 px-5 py-3 rounded-xl font-semibold transition"
-          >
-            <FaDownload />
-            Resume
-          </a>
+      <a
+        href="/resume/Kabelo_Makgae_Resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Resume
+      </a>
 
         </div>
 
@@ -188,14 +188,32 @@ export default function Navbar() {
                   )}
                 </button>
 
-                <a
-                  href="/resume.pdf"
-                  className="flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-xl transition"
+              <button
+                  onClick={() => {
+                    const link = document.createElement("a");
+                    link.href = "/resume/Kabelo_Makgae_Resume.pdf";
+                    link.download = "Kabelo_Makgae_Resume.pdf";
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                  }}
+                  className="
+                    flex
+                    items-center
+                    gap-2
+                    px-5
+                    py-3
+                    rounded-xl
+                    bg-cyan-500
+                    hover:bg-cyan-600
+                    text-white
+                    font-semibold
+                    transition
+                  "
                 >
                   <FaDownload />
-                  Resume
-                </a>
-
+                  Download Resume
+                </button>
               </li>
 
             </ul>

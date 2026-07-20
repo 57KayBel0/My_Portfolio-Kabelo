@@ -150,9 +150,9 @@ export default function ProjectCard({ project }) {
 
             {/* NEW CASE STUDY BUTTON */}
 
-            {project.id === 1 && (
+            {project.slug && (
               <Link
-                to="/preview/etl"
+                to={`/preview/${project.slug}`}
                 className="
                   flex
                   items-center

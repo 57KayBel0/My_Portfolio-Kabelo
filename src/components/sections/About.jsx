@@ -1,3 +1,4 @@
+import aboutImage from "../../assets/images/secondary photo.png";
 import { motion } from "framer-motion";
 import {
   FaBrain,
@@ -7,6 +8,8 @@ import {
 } from "react-icons/fa";
 
 import StatsCard from "../ui/StatsCard";
+
+
 
 export default function About() {
   return (
@@ -35,8 +38,23 @@ export default function About() {
             viewport={{ once: true }}
             className="flex justify-center"
           >
-            <div className="w-80 h-80 rounded-full bg-cyan-500/20 border-4 border-cyan-400 flex items-center justify-center shadow-lg">
-              <span className="text-8xl">👨🏾‍💻</span>
+          <div
+              className="
+                w-80
+                lg:w-[420px]
+                rounded-3xl
+                overflow-hidden
+                bg-slate-800
+                border
+                border-slate-700
+                shadow-xl
+              "
+            >
+              <img
+                src={aboutImage}
+                alt="Kabelo Makgae"
+                className="w-full h-auto object-cover"
+              />
             </div>
           </motion.div>
 
@@ -52,7 +70,7 @@ export default function About() {
             </h3>
 
             <p className="text-slate-300 leading-8 text-lg">
-              I'm <strong>Kabelo Makgae Motshabi</strong>, a passionate Data Scientist,
+              I'm <strong>Kabelo  Motshabi Makgae</strong>, a passionate Data Scientist,
               Machine Learning Engineer, Data Engineer, and Full Stack Developer
               with experience building scalable software applications, cloud-based
               data pipelines, and intelligent machine learning solutions.

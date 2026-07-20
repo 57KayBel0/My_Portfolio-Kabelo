@@ -8,6 +8,12 @@ import BackToTop from "./components/common/BackToTop";
 import Home from "./pages/Home";
 
 import HealthInsuranceETL from "./pages/CaseStudies/HealthInsuranceETL";
+import LoanEligibilityPrediction from "./pages/CaseStudies/LoanEligibilityPrediction";
+import MovieAnalysis from "./pages/CaseStudies/MovieAnalysis";
+import SmartTruckRoutePlanner from "./pages/CaseStudies/SmartTruckRoutePlanner";
+import BankFraudDetection from "./pages/CaseStudies/BankFraudDetection";
+import IrisAnalysis from "./pages/CaseStudies/IrisAnalysis";
+import BreastCancerPrediction from "./pages/CaseStudies/BreastCancerPrediction";
 
 export default function App() {
   return (
@@ -30,12 +36,41 @@ export default function App() {
         {/* ===============================
             Development Preview
         =============================== */}
-
         <Route
-          path="/preview/etl"
+          path="/preview/health-insurance-etl"
           element={<HealthInsuranceETL />}
         />
 
+        <Route
+          path="/preview/loan-eligibility-prediction"
+          element={<LoanEligibilityPrediction />}
+        />
+
+        <Route
+          path="/preview/movie-ratings-analysis"
+          element={<MovieAnalysis />}
+        />
+        <Route
+          path="/preview/smart-truck-route-planner"
+          element={<SmartTruckRoutePlanner />}
+        />
+
+        <Route
+          path="/preview/bank-fraud-detection"
+          element={<BankFraudDetection />}
+        />
+
+        <Route
+          path="/preview/iris-data-exploration"
+          element={<IrisAnalysis />}
+        />
+
+        <Route
+          path="/preview/breast-cancer-model-evaluation"
+          element={<BreastCancerPrediction />}
+        />
+
+          
       </Routes>
 
       <Footer />

@@ -9,9 +9,10 @@ import CaseStudyLessons from "../../components/case-study/CaseStudyLessons";
 import CaseStudySidebar from "../../components/case-study/CaseStudySidebar";
 import CaseStudyNavigation from "../../components/case-study/CaseStudyNavigation";
 
-export default function BreastCancerPrediction() {
+export default function SmartTruckRoutePlanner() {
+
   const caseStudy = caseStudies.find(
-    (study) => study.slug === "breast-cancer-model-evaluation"
+    (study) => study.slug === "smart-truck-route-planner"
   );
 
   if (!caseStudy) {
@@ -27,19 +28,32 @@ export default function BreastCancerPrediction() {
 
       <CaseStudySidebar />
 
-      <CaseStudyHero caseStudy={caseStudy} />
+      <CaseStudyHero
+        caseStudy={caseStudy}
+      />
 
-      <CaseStudyOverview caseStudy={caseStudy} />
+      <CaseStudyOverview
+        caseStudy={caseStudy}
+      />
 
-      <CaseStudyArchitecture caseStudy={caseStudy} />
+      <CaseStudyArchitecture
+        caseStudy={caseStudy}
+      />
 
-      <CaseStudyResults caseStudy={caseStudy} />
+      <CaseStudyResults
+        caseStudy={caseStudy}
+      />
 
-      <CaseStudyGallery caseStudy={caseStudy} />
+      <CaseStudyGallery
+        caseStudy={caseStudy}
+      />
 
-      <CaseStudyLessons caseStudy={caseStudy} />
-      
-      <CaseStudyNavigation currentSlug={caseStudy.slug} />
+      <CaseStudyLessons
+        caseStudy={caseStudy}
+      />
+
+      <CaseStudyNavigation 
+      currentSlug={caseStudy.slug} />
 
     </main>
   );

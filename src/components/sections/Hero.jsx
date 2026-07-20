@@ -13,11 +13,12 @@ import {
 } from "react-icons/fa";
 
 import { SiPostgresql } from "react-icons/si";
+import { FaDownload } from "react-icons/fa";
 
 import profile from "../../data/profile";
 import Button from "../ui/Button";
 
-import profileImage from "../../assets/images/profile.jpg.jpeg";
+import profileImage from "../../assets/images/secondary photo.png";
 
 export default function Hero() {
   return (
@@ -36,8 +37,8 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <p className="text-cyan-400 text-xl font-medium mb-4">
-              Hello, I'm 👋
+            <p className="text-cyan-400 text-xl font-medium tracking-wide mb-4">
+              👋 Hello, I'm
             </p>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
@@ -54,6 +55,9 @@ export default function Hero() {
                 2000,
                 "Full Stack Developer",
                 2000,
+                "AI Developer",
+                2000,
+
               ]}
               wrapper="h2"
               speed={50}
@@ -61,22 +65,56 @@ export default function Hero() {
               className="text-2xl md:text-3xl lg:text-4xl font-semibold text-cyan-400 mb-8"
             />
 
+            <div
+              className="
+                inline-flex
+                items-center
+                gap-2
+                bg-green-500/10
+                border
+                border-green-500/30
+                text-green-400
+                px-4
+                py-2
+                rounded-full
+                mb-8
+              "
+            >
+              <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+              Available for opportunities
+            </div>
+
             <p className="text-slate-400 text-lg leading-8 max-w-xl">
               {profile.tagline}
             </p>
 
+              15+ Projects   •   5+ Certifications   •   AI & Data Engineering
             <div className="flex flex-wrap gap-5 mt-10">
-
+              
               <Button href="#projects">
                 View Projects
               </Button>
 
-              <Button
-                href={profile.resume}
-                primary={false}
+              <a
+                href="/resume/Kabelo_Makgae_Resume.pdf"
+                download="Kabelo_Makgae_Resume.pdf"
+                className="
+                  inline-flex
+                  items-center
+                  gap-2
+                  px-6
+                  py-3
+                  rounded-xl
+                  bg-slate-800
+                  hover:bg-slate-700
+                  text-white
+                  font-semibold
+                  transition
+                "
               >
+                <FaDownload />
                 Download Resume
-              </Button>
+              </a>
 
             </div>
 
@@ -151,7 +189,7 @@ export default function Hero() {
 
               {/* Profile */}
 
-              <div
+             <div
                 className="
                   w-80
                   h-80
@@ -164,6 +202,9 @@ export default function Hero() {
                   to-cyan-500
                   p-2
                   shadow-[0_0_60px_rgba(6,182,212,.45)]
+                  transition-transform
+                  duration-500
+                  hover:scale-105
                 "
               >
 

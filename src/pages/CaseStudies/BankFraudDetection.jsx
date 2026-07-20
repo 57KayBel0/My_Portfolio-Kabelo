@@ -9,9 +9,9 @@ import CaseStudyLessons from "../../components/case-study/CaseStudyLessons";
 import CaseStudySidebar from "../../components/case-study/CaseStudySidebar";
 import CaseStudyNavigation from "../../components/case-study/CaseStudyNavigation";
 
-export default function BreastCancerPrediction() {
+export default function BankFraudDetection() {
   const caseStudy = caseStudies.find(
-    (study) => study.slug === "breast-cancer-model-evaluation"
+    (study) => study.slug === "bank-fraud-detection"
   );
 
   if (!caseStudy) {
@@ -24,7 +24,6 @@ export default function BreastCancerPrediction() {
 
   return (
     <main className="relative bg-slate-950 text-white min-h-screen">
-
       <CaseStudySidebar />
 
       <CaseStudyHero caseStudy={caseStudy} />
@@ -38,9 +37,8 @@ export default function BreastCancerPrediction() {
       <CaseStudyGallery caseStudy={caseStudy} />
 
       <CaseStudyLessons caseStudy={caseStudy} />
-      
-      <CaseStudyNavigation currentSlug={caseStudy.slug} />
 
+        <CaseStudyNavigation currentSlug={caseStudy.slug} />
     </main>
   );
 }
