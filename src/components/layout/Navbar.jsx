@@ -36,8 +36,7 @@ export default function Navbar() {
 
     window.addEventListener("scroll", handleScroll);
 
-    return () =>
-      window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
@@ -64,11 +63,11 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-slate-900/80 backdrop-blur-lg shadow-xl"
+          ? "bg-slate-900/80 backdrop-blur-xl shadow-xl border-b border-slate-800"
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 py-4 flex items-center justify-between">
 
         {/* Logo */}
 
@@ -80,59 +79,114 @@ export default function Navbar() {
           Kabelo<span className="text-white">.</span>
         </motion.a>
 
-        {/* Desktop Navigation */}
+        {/* Desktop */}
 
-        <ul className="hidden xl:flex items-center gap-6">
+        <ul className="hidden xl:flex items-center gap-7">
 
           {navLinks.map((item) => (
+
             <li key={item.name}>
+
               <Link
                 to={item.to}
-                spy={true}
-                smooth={true}
+                spy
+                smooth
                 duration={500}
                 offset={-80}
                 activeClass="text-cyan-400"
-                className="group relative cursor-pointer text-slate-300 hover:text-cyan-400 transition"
+                className="
+                  relative
+                  cursor-pointer
+                  text-slate-300
+                  hover:text-cyan-400
+                  transition
+                  group
+                "
               >
                 {item.name}
 
-                <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+                <span
+                  className="
+                    absolute
+                    left-0
+                    -bottom-1
+                    h-0.5
+                    w-0
+                    bg-cyan-400
+                    transition-all
+                    duration-300
+                    group-hover:w-full
+                  "
+                />
+
               </Link>
+
             </li>
+
           ))}
+
         </ul>
 
-        {/* Right Side */}
+        {/* Desktop Right */}
 
         <div className="hidden xl:flex items-center gap-4">
 
           <button
             onClick={toggleTheme}
-            className="w-11 h-11 rounded-full bg-slate-800 hover:bg-slate-700 flex items-center justify-center transition"
+            aria-label="Toggle theme"
+            className="
+              w-11
+              h-11
+              rounded-full
+              bg-slate-800
+              hover:bg-slate-700
+              flex
+              items-center
+              justify-center
+              transition
+            "
           >
-            {theme === "dark" ? (
-              <FaSun className="text-yellow-400" />
-            ) : (
-              <FaMoon className="text-cyan-400" />
-            )}
+            {theme === "dark"
+              ? <FaSun className="text-yellow-400" />
+              : <FaMoon className="text-cyan-400" />}
           </button>
 
-      <a
-        href="/resume/Kabelo_Makgae_Resume.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Resume
-      </a>
+          <a
+            href="/resume/Kabelo_Makgae_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              px-5
+              py-2.5
+              rounded-xl
+              bg-cyan-500
+              hover:bg-cyan-600
+              font-semibold
+              transition
+            "
+          >
+            Resume
+          </a>
 
         </div>
 
         {/* Mobile Button */}
 
         <button
-          className="xl:hidden text-2xl text-white"
+          aria-label="Open menu"
+          aria-expanded={mobileMenu}
           onClick={() => setMobileMenu(!mobileMenu)}
+          className="
+            xl:hidden
+            w-11
+            h-11
+            rounded-xl
+            bg-slate-800
+            flex
+            items-center
+            justify-center
+            text-xl
+          "
         >
           {mobileMenu ? <FaTimes /> : <FaBars />}
         </button>
@@ -147,76 +201,103 @@ export default function Navbar() {
 
           <motion.div
             ref={menuRef}
-            initial={{ y: -40, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -40, opacity: 0 }}
+            initial={{ opacity: 0, y: -25 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -25 }}
             transition={{ duration: 0.25 }}
-            className="xl:hidden bg-slate-900 border-t border-slate-700"
+            className="
+              xl:hidden
+              bg-slate-900
+              border-t
+              border-slate-800
+              shadow-2xl
+            "
           >
 
-            <ul className="flex flex-col">
+            <ul className="py-2">
 
               {navLinks.map((item) => (
+
                 <li key={item.name}>
 
                   <Link
                     to={item.to}
-                    smooth={true}
+                    smooth
                     duration={500}
                     offset={-80}
-                    onClick={() =>
-                      setMobileMenu(false)
-                    }
-                    className="block px-6 py-5 hover:bg-slate-800 hover:text-cyan-400 transition cursor-pointer"
+                    onClick={() => setMobileMenu(false)}
+                    className="
+                      block
+                      px-8
+                      py-4
+                      text-lg
+                      hover:bg-slate-800
+                      hover:text-cyan-400
+                      transition
+                      cursor-pointer
+                    "
                   >
                     {item.name}
                   </Link>
 
                 </li>
+
               ))}
 
-              <li className="flex justify-center gap-4 p-6">
+            </ul>
 
-                <button
-                  onClick={toggleTheme}
-                  className="w-12 h-12 rounded-full bg-slate-800 hover:bg-slate-700 flex items-center justify-center transition"
-                >
-                  {theme === "dark" ? (
-                    <FaSun className="text-yellow-400" />
-                  ) : (
-                    <FaMoon className="text-cyan-400" />
-                  )}
-                </button>
+            <div className="px-8 pb-8 pt-3 space-y-4">
 
               <button
-                  onClick={() => {
-                    const link = document.createElement("a");
-                    link.href = "/resume/Kabelo_Makgae_Resume.pdf";
-                    link.download = "Kabelo_Makgae_Resume.pdf";
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                  }}
-                  className="
-                    flex
-                    items-center
-                    gap-2
-                    px-5
-                    py-3
-                    rounded-xl
-                    bg-cyan-500
-                    hover:bg-cyan-600
-                    text-white
-                    font-semibold
-                    transition
-                  "
-                >
-                  <FaDownload />
-                  Download Resume
-                </button>
-              </li>
+                onClick={toggleTheme}
+                className="
+                  w-full
+                  flex
+                  justify-center
+                  items-center
+                  gap-3
+                  py-3
+                  rounded-xl
+                  bg-slate-800
+                  hover:bg-slate-700
+                  transition
+                "
+              >
+                {theme === "dark" ? (
+                  <>
+                    <FaSun />
+                    Light Mode
+                  </>
+                ) : (
+                  <>
+                    <FaMoon />
+                    Dark Mode
+                  </>
+                )}
+              </button>
 
-            </ul>
+              <a
+                href="/resume/Kabelo_Makgae_Resume.pdf"
+                download
+                className="
+                  w-full
+                  flex
+                  justify-center
+                  items-center
+                  gap-3
+                  py-3
+                  rounded-xl
+                  bg-cyan-500
+                  hover:bg-cyan-600
+                  font-semibold
+                  transition
+                "
+              >
+                <FaDownload />
+                Download Resume
+              </a>
+
+            </div>
 
           </motion.div>
 

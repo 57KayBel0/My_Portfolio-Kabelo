@@ -13,7 +13,10 @@ import StatsCard from "../ui/StatsCard";
 
 export default function About() {
   return (
-    <section id="about" className="bg-slate-900 py-24">
+    <section
+      id="about"
+      className="bg-slate-900 py-16 lg:py-24"
+    >
       <div className="container mx-auto px-6">
 
         {/* Section Title */}
@@ -22,13 +25,29 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="text-5xl font-bold text-center mb-16"
+          className="
+          text-4xl
+          sm:text-5xl
+          font-bold
+          text-center
+          mb-10
+          lg:mb-16
+          "
         >
           About Me
         </motion.h2>
 
         {/* Main Content */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div
+          className="
+          grid
+          grid-cols-1
+          lg:grid-cols-2
+          gap-10
+          lg:gap-16
+          items-center
+        "
+        >
 
           {/* Left Side - Profile Placeholder */}
           <motion.div
@@ -40,14 +59,16 @@ export default function About() {
           >
           <div
               className="
-                w-80
-                lg:w-[420px]
-                rounded-3xl
-                overflow-hidden
-                bg-slate-800
-                border
-                border-slate-700
-                shadow-xl
+              w-64
+              sm:w-72
+              md:w-80
+              lg:w-[420px]
+              rounded-3xl
+              overflow-hidden
+              bg-slate-800
+              border
+              border-slate-700
+              shadow-xl
               "
             >
               <img
@@ -65,11 +86,26 @@ export default function About() {
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl font-bold mb-6 text-cyan-400">
+            <h3 className="
+                text-2xl
+                sm:text-3xl
+                font-bold
+                mb-6
+                text-cyan-400
+                leading-snug
+                "
+            >
               Data Scientist | Machine Learning Engineer | Data Engineer | Full Stack Developer
             </h3>
 
-            <p className="text-slate-300 leading-8 text-lg">
+            <p className="
+                text-slate-300
+                text-base
+                sm:text-lg
+                leading-7
+                sm:leading-8
+                "
+              >
               I'm <strong>Kabelo  Motshabi Makgae</strong>, a passionate Data Scientist,
               Machine Learning Engineer, Data Engineer, and Full Stack Developer
               with experience building scalable software applications, cloud-based
@@ -116,7 +152,15 @@ export default function About() {
         </div>
 
         {/* Statistics */}
-        <div className="grid md:grid-cols-4 gap-6 mt-20">
+        <div className="
+              grid
+              grid-cols-2
+              lg:grid-cols-4
+              gap-5
+              mt-16
+              lg:mt-20
+              "
+            >
 
           <StatsCard
             number="15+"

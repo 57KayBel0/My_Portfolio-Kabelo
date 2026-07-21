@@ -27,8 +27,25 @@ export default function Hero() {
       className="min-h-screen bg-slate-950 flex items-center overflow-hidden"
     >
       <div className="container mx-auto px-6">
+      
+      <div className="
+            flex
+            justify-end
+            lg:justify-center
+            items-center
+            "
+        >
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div
+          className="
+            grid
+            grid-cols-[60%_40%]
+            lg:grid-cols-2
+            gap-6
+            lg:gap-16
+            items-center
+          "
+        >
 
           {/* LEFT SIDE */}
 
@@ -36,6 +53,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: -80 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
+            
           >
             <p className="text-cyan-400 text-xl font-medium tracking-wide mb-4">
               👋 Hello, I'm
@@ -155,7 +173,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: 80 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="flex justify-center"
+            className="flex justify-center -mt-15"
           >
 
             <div className="relative">
@@ -191,8 +209,12 @@ export default function Hero() {
 
              <div
                 className="
-                  w-80
-                  h-80
+                  w-40
+                  h-40
+                  sm:w-56
+                  sm:h-56
+                  md:w-72
+                  md:h-72
                   lg:w-[430px]
                   lg:h-[430px]
                   rounded-full
@@ -223,10 +245,13 @@ export default function Hero() {
             </div>
 
           </motion.div>
+          </div>
+          
 
         </div>
 
       </div>
     </section>
   );
+  
 }
