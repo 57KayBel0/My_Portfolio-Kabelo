@@ -435,27 +435,33 @@ const caseStudies = [
 
     database: "CSV Dataset",
 
-    github: "https://github.com/57KayBel0",
+    github: "https://github.com/57KayBel0/Bank-Fraud-Detection",
 
-    live: "",
+    live: "https://your-vercel-url.vercel.app",
 
     technologies: [
+      "React",
+      "FastAPI",
       "Python",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "XGBoost",
       "Pandas",
-      "NumPy",
-      "Scikit-Learn",
-      "Matplotlib",
-      "Seaborn",
+      "Tailwind CSS",
+      "Recharts",
+      "Axios",
+      "Render",
+      "Vercel",
+      "GitHub",
     ],
 
     overview:
-      "This project focuses on identifying fraudulent banking transactions using supervised machine learning techniques. The workflow includes data cleaning, exploratory data analysis, feature engineering, model training, and evaluation to distinguish legitimate transactions from fraudulent ones.",
+      "Bank Fraud Detection Platform is an AI-powered full-stack web application that detects fraudulent banking transactions using a machine learning model built with XGBoost. The platform enables users to analyse transactions in real time, visualise fraud trends, review historical predictions, and generate downloadable reports through a modern analytics dashboard.",
 
     problem:
-      "Financial institutions process millions of transactions every day, making manual fraud detection impossible. An intelligent prediction model helps identify suspicious transactions quickly and accurately.",
-
+      "Financial institutions process millions of transactions every day, making it difficult to identify fraudulent activities quickly and accurately. This project was developed to demonstrate how Machine Learning and modern web technologies can work together to automate fraud detection while providing an intuitive dashboard for analysing predictions and trends.",
     solution:
-      "A machine learning pipeline was developed to preprocess transaction data, engineer meaningful features, train classification models, and evaluate performance using fraud detection metrics.",
+      "The solution combines a React frontend, FastAPI backend, PostgreSQL database and an XGBoost Machine Learning model into a cloud-deployed platform capable of analysing transactions in real time.Users can submit transaction details, receive an instant fraud prediction with confidence scores, review previous predictions, analyse fraud trends through interactive charts and export reports in CSV and PDF formats.",
 
     architecture: [
       "Transaction Dataset",
@@ -545,6 +551,7 @@ const caseStudies = [
       "Matplotlib",
       "Seaborn",
       "Jupyter Notebook",
+      "React",
     ],
 
     overview:

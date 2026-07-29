@@ -41,7 +41,7 @@ const projects = [
     image: "/images/projects/loan.png",
 
     github:
-      "https://github.com/57KayBel0/HexSoftwares_Projects",
+      "https://github.com/57KayBel0/HexSoftwares_Projects/tree/master/Loan-Eligibility-Prediction",
 
     demo: "",
 
@@ -68,7 +68,7 @@ const projects = [
     image: "/images/projects/movie.png",
 
     github:
-      "https://github.com/57KayBel0/HexSoftwares_Projects",
+      "https://github.com/57KayBel0/HexSoftwares_Projects/tree/master/Movie-Ratings-Analysis",
 
     demo: "",
 
@@ -96,7 +96,7 @@ const projects = [
     github:
       "https://github.com/57KayBel0/SmartTruck-Route-Planner",
 
-    demo: "",
+    demo: "https://smart-truck-route-planner.vercel.app/",
 
     technologies: [
       "React",
@@ -122,9 +122,9 @@ const projects = [
     image: "/images/projects/fraud.png",
 
     github:
-      "https://github.com/57KayBel0",
+      "https://github.com/57KayBel0/Bank-Fraud-Detection",
 
-    demo: "",
+    demo: "https://your-vercel-url.vercel.app",
 
     technologies: [
       "Python",
@@ -149,7 +149,7 @@ const projects = [
     image: "/images/projects/iris.png",
 
     github:
-      "https://github.com/57KayBel0/HexSoftwares_Projects",
+      "https://github.com/57KayBel0/HexSoftwares_Projects/tree/master/Iris-Data-Exploration",
 
     demo: "",
 
@@ -176,7 +176,7 @@ const projects = [
     image: "/images/projects/breast-cancer.png",
 
     github:
-      "https://github.com/57KayBel0",
+      "https://github.com/57KayBel0/HexSoftwares_Projects/tree/master/Model-Evaluation-Classification",
 
     demo: "",
 

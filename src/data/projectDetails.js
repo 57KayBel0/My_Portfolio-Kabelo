@@ -153,7 +153,6 @@ const projectDetails = [
 
     screenshots: [
       "/images/projects/loan.png",
-      
       "/images/projects/loan-3.png",
       "/images/projects/loan-4.png",
       "/images/projects/loan-5.png",
@@ -350,75 +349,98 @@ const projectDetails = [
     id: 5,
 
     overview:
-      "Bank Fraud Detection is a machine learning project focused on identifying fraudulent financial transactions through predictive analytics. The project demonstrates how classification algorithms can be used to detect suspicious activity while minimizing false positives.",
+      "Bank Fraud Detection Platform is a production-ready AI-powered full-stack application that detects fraudulent banking transactions in real time using an XGBoost machine learning model. The platform combines a React frontend, FastAPI backend, PostgreSQL database, and interactive analytics dashboard to help users analyse transactions, monitor fraud trends, review prediction history, and generate downloadable CSV and PDF reports.",
 
     problem:
       "Financial institutions process millions of transactions daily, making manual fraud detection nearly impossible. Automated detection systems are essential for identifying suspicious transactions in real time.",
 
     solution:
-      "Developed a machine learning workflow that preprocesses transaction data, trains classification models, evaluates performance, and identifies potentially fraudulent transactions using predictive analytics.",
+      "Developed a complete cloud-deployed fraud detection platform that combines Machine Learning and modern web technologies. Users can submit banking transactions through a React interface, receive instant fraud predictions from a FastAPI backend powered by an XGBoost model, store prediction history in PostgreSQL, visualise fraud trends through interactive charts, and export reports in CSV and PDF formats.",
 
     architecture: [
-      "Transaction Dataset",
-      "Data Cleaning",
-      "Feature Engineering",
-      "Machine Learning Models",
-      "Fraud Prediction",
-      "Performance Evaluation",
+      "React Frontend",
+      "Axios API Client",
+      "FastAPI Backend",
+      "XGBoost Machine Learning Model",
+      "SQLAlchemy ORM",
+      "PostgreSQL Database",
+      "Analytics Dashboard",
     ],
 
     technologies: [
+      "React",
+      "FastAPI",
       "Python",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "XGBoost",
       "Pandas",
-      "NumPy",
-      "Scikit-Learn",
-      "Matplotlib",
-      "Seaborn",
-      "Jupyter Notebook",
+      "Tailwind CSS",
+      "Recharts",
+      "Axios",
+      "Render",
+      "Vercel",
+      "GitHub",
     ],
 
     features: [
-      "Data Cleaning",
-      "Feature Engineering",
-      "Exploratory Data Analysis",
-      "Fraud Classification",
-      "Model Training",
-      "Model Evaluation",
-      "Prediction Pipeline",
-      "Performance Visualization",
+      "AI-powered Fraud Detection",
+      "Real-time Predictions",
+      "Interactive Dashboard",
+      "Fraud Trend Analytics",
+      "Fraud Distribution Charts",
+      "Prediction History",
+      "Search & Filtering",
+      "CSV Export",
+      "PDF Report Export",
+      "PostgreSQL Database",
+      "Responsive Design",
+      "Cloud Deployment"
     ],
 
     challenges: [
-      "Working with imbalanced datasets",
-      "Reducing false positives",
-      "Selecting suitable classification algorithms",
-      "Evaluating fraud detection performance",
+      "Deploying a Machine Learning model to the cloud",
+      "Configuring PostgreSQL with SQLAlchemy",
+      "Integrating React with FastAPI",
+      "Managing prediction history",
+      "Designing an intuitive analytics dashboard",
+      "Implementing export functionality for business reporting",
     ],
 
     achievements: [
-      "Built a complete fraud detection workflow",
-      "Applied supervised machine learning techniques",
-      "Produced meaningful data visualizations",
-      "Generated predictive insights from transaction data",
+      "Built a production-ready full-stack AI application",
+      "Integrated React with FastAPI REST APIs",
+      "Deployed frontend on Vercel",
+      "Deployed backend and PostgreSQL on Render",
+      "Integrated XGBoost for real-time fraud prediction",
+      "Implemented prediction history and analytics",
+      "Built interactive dashboards using Recharts",
+      "Added CSV and PDF report generation",
     ],
 
     lessonsLearned: [
-      "Fraud detection concepts",
-      "Classification model evaluation",
-      "Feature engineering",
-      "Machine learning best practices",
+      "Deploying Machine Learning applications to the cloud",
+      "Building scalable REST APIs with FastAPI",
+      "Integrating PostgreSQL using SQLAlchemy",
+      "Designing responsive React dashboards",
+      "Managing full-stack deployments using Render and Vercel",
+      "Building production-ready AI applications",
     ],
 
     screenshots: [
-      "/images/projects/fraud.png",
-      "/images/projects/fraud-2.png",
-      "/images/projects/fraud-3.png",
+      "/images/projects/fraud-dashboard.png",
+      "/images/projects/fraud-dashboard-2.png",
+      "/images/projects/fraud-dashboard-3.png",
+      "/images/projects/fraud-dashboard-4.png",
+      "/images/projects/fraud-dashboard-5.png",
+      "/images/projects/fraud-dashboard-6.png",
     ],
 
     github:
-      "https://github.com/57KayBel0",
+      "https://github.com/57KayBel0/Bank-Fraud-Detection",
 
-    demo: "",
+    demo:
+      "https://bank-fraud-detection-five.vercel.app/",
   },
 
     {
