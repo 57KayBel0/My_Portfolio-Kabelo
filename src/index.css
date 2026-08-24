@@ -8,35 +8,188 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background: #020617;
-  color: white;
-  overflow-x: hidden;
-  font-family: Inter, system-ui, sans-serif;
-}
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Inter, system-ui, sans-serif;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* ==============================
+   LIGHT THEME
+============================== */
+
+html.light body {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* ==============================
+   DARK THEME
+============================== */
+
+html.dark body {
+  background: #020617;
+  color: white;
+}
+
+/* ==============================
+   Images
+============================== */
+
 img {
   display: block;
   max-width: 100%;
 }
 
+/* ==============================
+   Buttons
+============================== */
+
 button {
   cursor: pointer;
 }
+
+/* ==============================
+   Links
+============================== */
 
 a {
   text-decoration: none;
 }
 
+/* ==============================
+   Text Selection
+============================== */
+
 ::selection {
   background: #06b6d4;
   color: white;
+}
+/* =========================================
+   Portfolio Theme Overrides
+========================================= */
+
+/* LIGHT MODE */
+
+html.light .bg-slate-950 {
+  background-color: #f8fafc !important;
+}
+
+html.light .bg-slate-900 {
+  background-color: #ffffff !important;
+}
+
+html.light .bg-slate-800 {
+  background-color: #f1f5f9 !important;
+}
+
+html.light .bg-slate-700 {
+  background-color: #e2e8f0 !important;
+}
+
+/* DARK MODE */
+
+html.dark .bg-slate-950 {
+  background-color: #020617 !important;
+}
+
+html.dark .bg-slate-900 {
+  background-color: #0f172a !important;
+}
+
+html.dark .bg-slate-800 {
+  background-color: #1e293b !important;
+}
+
+html.dark .bg-slate-700 {
+  background-color: #334155 !important;
+}
+/* =========================================
+   LIGHT MODE TEXT
+========================================= */
+
+html.light .text-white {
+  color: #0f172a !important;
+}
+
+html.light .text-slate-300 {
+  color: #475569 !important;
+}
+
+html.light .text-slate-400 {
+  color: #64748b !important;
+}
+
+html.light .text-slate-500 {
+  color: #64748b !important;
+}
+
+/* =========================================
+   DARK MODE TEXT
+========================================= */
+
+html.dark .text-white {
+  color: #ffffff !important;
+}
+
+html.dark .text-slate-300 {
+  color: #cbd5e1 !important;
+}
+
+html.dark .text-slate-400 {
+  color: #94a3b8 !important;
+}
+
+html.dark .text-slate-500 {
+  color: #64748b !important;
+}
+/* =========================================
+   LIGHT MODE BORDERS
+========================================= */
+
+html.light .border-slate-800 {
+  border-color: #e2e8f0 !important;
+}
+
+html.light .border-slate-700 {
+  border-color: #cbd5e1 !important;
+}
+
+/* =========================================
+   DARK MODE BORDERS
+========================================= */
+
+html.dark .border-slate-800 {
+  border-color: #1e293b !important;
+}
+
+html.dark .border-slate-700 {
+  border-color: #334155 !important;
+}
+/* =========================================
+   EXPERIENCE / EDUCATION / CERTIFICATIONS
+   Keep card text readable in Light Mode
+========================================= */
+
+html.light .experience-card,
+html.light .education-card,
+html.light .certification-card {
+  color: white;
+}
+
+html.light .experience-card p,
+html.light .education-card p,
+html.light .certification-card p {
+  color: white !important;
 }

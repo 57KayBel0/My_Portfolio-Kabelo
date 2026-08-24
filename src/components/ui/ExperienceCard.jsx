@@ -17,14 +17,14 @@ export default function ExperienceCard({ experience }) {
           </p>
         </div>
 
-        <div className="text-slate-400 mt-2 md:mt-0 text-right">
+        <div className="text-white mt-2 md:mt-0 text-right">
           <p>{experience.period}</p>
           <p>{experience.location}</p>
         </div>
 
       </div>
 
-      <p className="text-slate-300 leading-7 mb-6">
+      <p className="text-white leading-7 mb-6">
         {experience.description}
       </p>
 
@@ -38,7 +38,7 @@ export default function ExperienceCard({ experience }) {
 
       </div>
 
-      <ul className="list-disc list-inside text-slate-400 space-y-2">
+      <ul className="list-disc list-inside text-white space-y-2">
 
         {experience.achievements.map((achievement) => (
           <li key={achievement}>

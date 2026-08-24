@@ -17,7 +17,7 @@ export default function EducationCard({ education }) {
             {education.institution}
           </p>
 
-          <p className="text-slate-300 leading-7">
+          <p className="text-white leading-7">
             {education.description}
           </p>
 
@@ -36,7 +36,7 @@ export default function EducationCard({ education }) {
             Period
           </h4>
 
-          <p className="text-slate-400">
+          <p className="text-white">
             {education.period}
           </p>
         </div>

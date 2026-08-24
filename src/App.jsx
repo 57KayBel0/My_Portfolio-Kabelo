@@ -14,6 +14,8 @@ import SmartTruckRoutePlanner from "./pages/CaseStudies/SmartTruckRoutePlanner";
 import BankFraudDetection from "./pages/CaseStudies/BankFraudDetection";
 import IrisAnalysis from "./pages/CaseStudies/IrisAnalysis";
 import BreastCancerPrediction from "./pages/CaseStudies/BreastCancerPrediction";
+import FreightRatePrediction from "./pages/CaseStudies/FreightRatePrediction";
+import FuelRouteOptimizer from "./pages/CaseStudies/FuelRouteOptimizer";
 
 export default function App() {
   return (
@@ -68,6 +70,16 @@ export default function App() {
         <Route
           path="/preview/breast-cancer-model-evaluation"
           element={<BreastCancerPrediction />}
+        />
+
+        <Route
+          path="/preview/freight-rate-prediction"
+          element={<FreightRatePrediction />}
+        />
+
+        <Route
+          path="/preview/fuel-route-optimizer"
+          element={<FuelRouteOptimizer />}
         />
 
           

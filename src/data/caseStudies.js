@@ -416,28 +416,30 @@ const caseStudies = [
 
     slug: "bank-fraud-detection",
 
-    title: "Bank Fraud Detection",
+    title: "Bank Fraud Detection Platform",
 
     subtitle:
-      "Machine learning solution for detecting potentially fraudulent financial transactions using classification algorithms and predictive analytics.",
+      "AI-powered full-stack fraud detection platform for analysing financial transactions, identifying potential fraud, and monitoring financial risk through an interactive analytics dashboard.",
 
     category: "Machine Learning",
 
     featured: true,
 
-    role: "Machine Learning Engineer",
+    role: "Machine Learning Engineer & Full Stack Developer",
 
     duration: "2 Weeks",
 
     status: "Completed",
 
-    industry: "Banking",
+    industry: "Banking & Financial Services",
 
-    database: "CSV Dataset",
+    database: "PostgreSQL",
 
-    github: "https://github.com/57KayBel0/Bank-Fraud-Detection",
+    github:
+      "https://github.com/57KayBel0/Bank-Fraud-Detection",
 
-    live: "https://your-vercel-url.vercel.app",
+    live:
+      "https://bank-fraud-detection-five.vercel.app/",
 
     technologies: [
       "React",
@@ -450,68 +452,85 @@ const caseStudies = [
       "Tailwind CSS",
       "Recharts",
       "Axios",
+      "React Router",
       "Render",
       "Vercel",
       "GitHub",
     ],
 
     overview:
-      "Bank Fraud Detection Platform is an AI-powered full-stack web application that detects fraudulent banking transactions using a machine learning model built with XGBoost. The platform enables users to analyse transactions in real time, visualise fraud trends, review historical predictions, and generate downloadable reports through a modern analytics dashboard.",
+      "The Bank Fraud Detection Platform is a full-stack AI application designed to analyse financial transactions and identify potentially fraudulent activity. The platform combines a React frontend, FastAPI backend, XGBoost machine learning model, and PostgreSQL database into an interactive fraud monitoring system.",
 
     problem:
-      "Financial institutions process millions of transactions every day, making it difficult to identify fraudulent activities quickly and accurately. This project was developed to demonstrate how Machine Learning and modern web technologies can work together to automate fraud detection while providing an intuitive dashboard for analysing predictions and trends.",
+      "Financial institutions process large volumes of transactions, making it difficult to manually identify suspicious activity efficiently. The goal of this project was to create a system that could analyse transaction information, generate fraud predictions, store prediction history, and provide users with an intuitive dashboard for monitoring financial activity.",
+
     solution:
-      "The solution combines a React frontend, FastAPI backend, PostgreSQL database and an XGBoost Machine Learning model into a cloud-deployed platform capable of analysing transactions in real time.Users can submit transaction details, receive an instant fraud prediction with confidence scores, review previous predictions, analyse fraud trends through interactive charts and export reports in CSV and PDF formats.",
+      "The solution combines machine learning with a full-stack web application. Users can submit transaction information through the React dashboard, which communicates with a FastAPI backend. The trained XGBoost model analyses the transaction and returns a prediction and probability. Results are stored in PostgreSQL and exposed through analytics, history, alerts, and model-monitoring features.",
 
     architecture: [
-      "Transaction Dataset",
-      "Data Cleaning",
-      "Feature Engineering",
-      "Machine Learning Model",
-      "Fraud Prediction",
+      "React Frontend",
+      "React Router",
+      "Axios API Client",
+      "FastAPI REST API",
+      "XGBoost Machine Learning Model",
+      "SQLAlchemy ORM",
+      "PostgreSQL Database",
+      "Fraud Analytics API",
+      "Interactive React Dashboard",
+      "Vercel Frontend Deployment",
+      "Render Backend Deployment",
     ],
 
     metrics: [
       {
-        label: "Project",
-        value: "Machine Learning",
+        label: "AI Model",
+        value: "XGBoost",
       },
       {
-        label: "Algorithms",
-        value: "Classification",
+        label: "Model Accuracy",
+        value: "99.97%",
       },
       {
-        label: "Dataset",
-        value: "Financial Transactions",
+        label: "Database",
+        value: "PostgreSQL",
       },
       {
-        label: "Automation",
-        value: "100%",
+        label: "Deployment",
+        value: "Vercel + Render",
       },
     ],
 
     results: [
-      "Prepared and cleaned transaction data.",
-      "Performed fraud-focused exploratory analysis.",
-      "Built and evaluated classification models.",
-      "Generated fraud predictions.",
-      "Improved understanding of transaction risk patterns.",
+      "Developed a complete full-stack bank fraud detection platform.",
+      "Integrated an XGBoost machine learning model with a FastAPI REST API.",
+      "Built an interactive React dashboard for fraud monitoring.",
+      "Implemented transaction prediction with probability scoring.",
+      "Stored prediction history using PostgreSQL and SQLAlchemy.",
+      "Added fraud analytics and transaction trend visualizations.",
+      "Added fraud distribution monitoring with risk categories.",
+      "Implemented transaction history and alert monitoring.",
+      "Added AI model information and performance monitoring.",
+      "Implemented reporting and export functionality.",
+      "Deployed the frontend on Vercel and backend on Render.",
     ],
 
     lessons: [
-      "Class imbalance must be carefully handled in fraud datasets.",
-      "Feature engineering strongly influences fraud detection accuracy.",
-      "Precision and recall are often more useful than accuracy.",
-      "Visualization helps uncover hidden fraud patterns.",
-      "Machine learning supports faster financial risk assessment.",
+      "Machine learning models become significantly more useful when integrated into complete applications rather than being used only in notebooks.",
+      "FastAPI provides an effective way to expose machine learning predictions through REST APIs.",
+      "PostgreSQL provides persistent storage for transaction and prediction history.",
+      "Interactive visualizations make financial and machine learning results easier to interpret.",
+      "A production-style AI application requires frontend, backend, database, machine learning, and deployment components to work together.",
+      "Separating the frontend and backend deployments makes the application easier to maintain and scale.",
     ],
 
     gallery: [
-      "/images/projects/fraud.png",
-      "/images/projects/fraud-2.png",
-      "/images/projects/fraud-3.png",
-      "/images/projects/fraud-4.png",
-      "/images/projects/fraud-5.png",
+      "/images/projects/case-studies/Back-Fraud-dectection/Bank-Fraud-Detection Cover.png",
+      "/images/projects/case-studies/Back-Fraud-dectection/analytics.png",
+      "/images/projects/case-studies/Back-Fraud-dectection/fraud-trend.png",
+      "/images/projects/case-studies/Back-Fraud-dectection/prediction.png",
+      "/images/projects/case-studies/Back-Fraud-dectection/history.png",
+      "/images/projects/case-studies/Back-Fraud-dectection/alerts.png",
+      "/images/projects/case-studies/Back-Fraud-dectection/model.png",
     ],
   },
 
@@ -712,6 +731,242 @@ const caseStudies = [
       "/images/projects/breast-cancer-3.png",
       "/images/projects/breast-cancer-4.png",
       "/images/projects/breast-cancer-5.png",
+    ],
+  },
+  
+  {
+    id: 8,
+
+    slug: "freight-rate-prediction",
+
+    title: "Freight Rate Prediction",
+
+    subtitle:
+      "End-to-end machine learning pipeline for predicting freight transportation rates from historical shipment data using a tuned CatBoost regression model.",
+
+    category: "Machine Learning",
+
+    featured: true,
+
+    role: "Machine Learning Engineer",
+
+    duration: "Technical Assessment",
+
+    status: "Completed",
+
+    industry: "Logistics & Transportation",
+
+    database: "Shipment Datasets",
+
+    github:
+      "https://github.com/57KayBel0/freight-rate-prediction",
+
+    live: "",
+
+    technologies: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-Learn",
+      "CatBoost",
+      "Matplotlib",
+      "Git",
+      "GitHub",
+    ],
+
+    overview:
+      "Freight Rate Prediction is an end-to-end machine learning pipeline developed as part of a Machine Learning Engineer technical assessment. The system uses historical shipment data to predict freight transportation rates and includes data preprocessing, exploratory data analysis, feature engineering, model development, hyperparameter tuning, prediction generation, and validation.",
+
+    problem:
+      "Freight transportation rates vary according to factors such as shipment distance, equipment type, market conditions, and quote signals. The objective was to build a reproducible machine learning pipeline capable of predicting freight rates for unseen shipment requests while producing validated prediction files.",
+
+    solution:
+      "The project processes historical shipment data, handles missing values using median imputation based on the training dataset, engineers temporal, route, geographic, and interaction features, compares multiple regression models, and tunes the strongest model. The final solution uses a tuned CatBoost Regressor that outperformed the baseline Random Forest model and successfully passed the supplied validation script.",
+
+    architecture: [
+      "Historical Shipment Data",
+      "Data Preprocessing",
+      "Exploratory Data Analysis",
+      "Missing Value Imputation",
+      "Temporal Feature Engineering",
+      "Route Feature Engineering",
+      "Geographic Feature Engineering",
+      "Interaction Feature Engineering",
+      "Random Forest Baseline",
+      "CatBoost Regression",
+      "Hyperparameter Tuning",
+      "Prediction Generation",
+      "Validation",
+    ],
+
+    metrics: [
+      {
+        label: "Final Model",
+        value: "Tuned CatBoost",
+      },
+      {
+        label: "MAE",
+        value: "103.42",
+      },
+      {
+        label: "RMSE",
+        value: "526.10",
+      },
+      {
+        label: "R²",
+        value: "0.8706",
+      },
+    ],
+
+    results: [
+      "Built a reproducible end-to-end freight-rate prediction pipeline.",
+      "Performed exploratory data analysis on historical shipment data.",
+      "Created temporal features including year, month, day, weekday, week number, and weekend indicator.",
+      "Created a combined Pickup → Delivery route feature.",
+      "Engineered latitude and longitude difference features.",
+      "Created interaction features including Distance Squared, Distance / Weight Ratio, Distance × Market Index, and Distance × Quote Signal.",
+      "Established Random Forest as the baseline model with an R² of 0.8403.",
+      "Improved performance using CatBoost with an R² of 0.8672.",
+      "Achieved the best performance using the tuned CatBoost model with an R² of 0.8706.",
+      "Generated predictions for 12,000 unseen validation shipments.",
+      "Successfully validated 31 fixed December predictions.",
+      "Generated the December freight-rate prediction visualization.",
+    ],
+
+    lessons: [
+      "Feature engineering can significantly improve predictive performance on structured transportation data.",
+      "Distance was identified as the strongest predictor of freight cost.",
+      "Equipment type has a significant influence on freight pricing.",
+      "Market Index and Quote Signal provide additional predictive information.",
+      "CatBoost is effective for structured tabular datasets containing categorical variables.",
+      "Hyperparameter tuning and early stopping improved the final model.",
+      "Validation scripts provide an important safeguard for production-ready prediction outputs.",
+    ],
+
+    gallery: [
+      "/images/projects/case-studies/Freight-Rate-Prediction/candidate_december.png",
+      "/images/projects/case-studies/Freight-Rate-Prediction/info().png",
+      "/images/projects/case-studies/Freight-Rate-Prediction/isnull.png",
+      "/images/projects/case-studies/Freight-Rate-Prediction/predict.py.png",
+      "/images/projects/case-studies/Freight-Rate-Prediction/scope.py.png",
+      "/images/projects/case-studies/Freight-Rate-Prediction/train_chatboost_tuned.py.png",
+      "/images/projects/case-studies/Freight-Rate-Prediction/train_groupby.png",
+
+    ],
+  },
+  
+  {
+    
+    id: 9,
+
+    slug: "fuel-route-optimizer",
+
+    title: "Fuel Route Optimizer",
+
+    subtitle:
+      "Django REST API that calculates optimal driving routes and recommends cost-effective fuel stops using OpenRouteService, Leaflet, and fuel-station data.",
+
+    category: "Optimization & Logistics",
+
+    featured: true,
+
+    role: "Backend Software Engineer",
+
+    duration: "3 Weeks",
+
+    status: "Completed",
+
+    industry: "Logistics & Transportation",
+
+    database: "SQLite",
+
+    github:
+      "https://github.com/57KayBel0/fuel-route-optimizer",
+
+    live: "",
+
+    technologies: [
+      "Python 3.12",
+      "Django 4.2",
+      "Django REST Framework",
+      "JavaScript",
+      "Leaflet.js",
+      "OpenRouteService",
+      "SQLite",
+      "Docker",
+      "Geopy",
+      "Polyline",
+      "REST API",
+    ],
+
+    overview:
+      "Fuel Route Optimizer is a Django REST API application that calculates driving routes between two locations and recommends cost-effective fuel stops along the journey. The application integrates OpenRouteService for route generation, uses a local database of fuel stations, and provides an interactive Leaflet map for visualizing the trip.",
+
+    problem:
+      "Long-distance trips require drivers and fleet operators to consider route distance, vehicle range, fuel consumption, fuel prices, and suitable refueling locations. Manually determining efficient fuel stops can make trip planning more difficult and increase fuel costs.",
+
+    solution:
+      "The application calculates the driving route, determines refueling checkpoints based on vehicle range, searches for nearby fuel stations, selects the cheapest suitable station, estimates the fuel required, and calculates the total trip fuel cost. The resulting route and fuel stops can be visualized through an interactive map.",
+
+    architecture: [
+      "Django REST API",
+      "Address Geocoding",
+      "OpenRouteService",
+      "Route Calculation",
+      "Fuel Station Database",
+      "Fuel Stop Optimization",
+      "Fuel Consumption Estimation",
+      "Fuel Cost Calculation",
+      "Leaflet Map Visualization",
+      "Django Route Cache",
+      "Docker",
+    ],
+
+    metrics: [
+      {
+        label: "Backend",
+        value: "Django REST",
+      },
+      {
+        label: "Routing",
+        value: "OpenRouteService",
+      },
+      {
+        label: "Mapping",
+        value: "Leaflet",
+      },
+      {
+        label: "Vehicle Range",
+        value: "500 Miles",
+      },
+    ],
+
+    results: [
+      "Implemented route calculation between US locations.",
+      "Implemented fuel-stop recommendations based on vehicle range.",
+      "Added cheapest nearby fuel-station selection.",
+      "Implemented fuel-consumption estimation.",
+      "Implemented total fuel-cost estimation.",
+      "Added interactive Leaflet route visualization.",
+      "Added animated route drawing and start/destination markers.",
+      "Implemented route caching to improve repeated-request performance.",
+      "Added Docker support.",
+      "Successfully tested multiple long-distance routes.",
+    ],
+
+    lessons: [
+      "Routing APIs can simplify the development of geospatial applications.",
+      "Fuel-price data can be combined with route information to improve transportation planning.",
+      "Caching can improve performance for repeated route requests.",
+      "Interactive mapping makes logistics applications easier to understand.",
+      "Separating routing, fuel-station selection, and cost calculations creates a maintainable application architecture.",
+    ],
+
+    gallery: [
+      "/images/projects/fuel-route.png",
+      "/images/projects/case-studies/Fuel-Route-Optimizer/left_screen_only_121.png",
+      "/images/projects/case-studies/Fuel-Route-Optimizer/left_screen_only_122.png",
+
     ],
   },
 ]

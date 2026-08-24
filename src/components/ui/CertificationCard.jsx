@@ -17,7 +17,7 @@ export default function CertificationCard({ certification }) {
             {certification.issuer}
           </p>
 
-          <p className="text-slate-300 leading-7">
+          <p className="text-white leading-7">
             {certification.description}
           </p>
 

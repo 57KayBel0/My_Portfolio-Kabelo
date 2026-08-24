@@ -113,26 +113,33 @@ const projects = [
     id: 5,
     slug: "bank-fraud-detection",
     featured: true,
-    title: "Bank Fraud Detection",
+
+    title: "Bank Fraud Detection Platform",
+
     category: "Machine Learning",
 
     description:
-      "Designed a machine learning solution to identify potentially fraudulent financial transactions using predictive analytics and classification techniques.",
+      "AI-powered full-stack fraud detection platform that analyses financial transactions using XGBoost and provides real-time predictions, analytics, alerts, transaction history, and model monitoring through an interactive React dashboard.",
 
-    image: "/images/projects/fraud.png",
+    image:
+      "/images/projects/case-studies/Back-Fraud-dectection/Bank-Fraud-Detection Cover.png",
 
     github:
       "https://github.com/57KayBel0/Bank-Fraud-Detection",
 
-    demo: "https://your-vercel-url.vercel.app",
+    demo:
+      "https://bank-fraud-detection-five.vercel.app/",
 
     technologies: [
+      "React",
+      "FastAPI",
       "Python",
-      "Pandas",
-      "NumPy",
-      "Scikit-Learn",
-      "Matplotlib",
-      "Seaborn",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "XGBoost",
+      "Tailwind CSS",
+      "Recharts",
+      "Axios",
     ],
   },
 
@@ -189,6 +196,60 @@ const projects = [
       "Seaborn",
     ],
   },
+
+  {
+    id: 8,
+    slug: "freight-rate-prediction",
+    featured: true,
+    title: "Freight Rate Prediction",
+    category: "Machine Learning",
+
+    description:
+      "Developed a machine learning regression model that predicts freight shipping rates using logistics and transportation features to improve cost estimation and pricing decisions.",
+
+    image: "/images/projects/freight-rate.png",
+
+    github:
+      "https://github.com/57KayBel0/freight-rate-prediction",
+
+    demo: "",
+
+    technologies: [
+      "Python",
+      "Pandas",
+      "Scikit-Learn",
+      "NumPy",
+      "Matplotlib",
+      "Regression",
+    ],
+  },
+
+  {
+    id: 9,
+    slug: "fuel-route-optimizer",
+    featured: true,
+    title: "Fuel Route Optimizer",
+    category: "Optimization & Logistics",
+
+    description:
+      "Built a logistics optimization application that calculates fuel-efficient delivery routes, helping reduce travel distance, fuel consumption, and transportation costs.",
+
+    image: "/images/projects/fuel-route.png",
+
+    github:
+      "https://github.com/57KayBel0/fuel-route-optimizer",
+
+    demo: "",
+
+    technologies: [
+      "Python",
+      "React",
+      "Optimization",
+      "Logistics",
+      "Routing",
+      "Data Visualization",
+    ],
+  }
 ];
 
 export default projects;

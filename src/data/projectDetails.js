@@ -428,12 +428,8 @@ const projectDetails = [
     ],
 
     screenshots: [
-      "/images/projects/fraud-dashboard.png",
-      "/images/projects/fraud-dashboard-2.png",
-      "/images/projects/fraud-dashboard-3.png",
-      "/images/projects/fraud-dashboard-4.png",
-      "/images/projects/fraud-dashboard-5.png",
-      "/images/projects/fraud-dashboard-6.png",
+      "/images/projects/case-studies/Back-Fraud-dectection/Bank-Fraud-Detection Cover.png",
+      
     ],
 
     github:
@@ -595,6 +591,195 @@ const projectDetails = [
 
     github:
       "https://github.com/57KayBel0",
+
+    demo: "",
+  },
+
+  {
+    id: 8,
+
+    overview:
+      "Freight Rate Prediction is an end-to-end machine learning pipeline developed as part of a Machine Learning Engineer technical assessment. The project predicts freight transportation rates using historical shipment data and includes data preprocessing, exploratory data analysis, feature engineering, model development, hyperparameter tuning, prediction generation, and validation.",
+
+    problem:
+      "Freight transportation rates vary according to shipment distance, equipment type, market conditions, quote signals, and other shipment characteristics. The objective was to build a reproducible machine learning pipeline capable of predicting freight rates for unseen shipment requests.",
+
+    solution:
+      "Built a complete freight-rate prediction workflow that preprocesses historical shipment data, engineers temporal, route, geographic, and interaction features, compares multiple regression models, tunes the strongest model, generates predictions, and validates the final prediction files using the supplied scoring script.",
+
+    architecture: [
+      "Historical Shipment Data",
+      "Data Preprocessing",
+      "Exploratory Data Analysis",
+      "Feature Engineering",
+      "Random Forest Baseline",
+      "CatBoost Regression",
+      "Hyperparameter Tuning",
+      "Prediction Generation",
+      "Validation",
+    ],
+
+    technologies: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-Learn",
+      "CatBoost",
+      "Matplotlib",
+      "Git",
+      "GitHub",
+    ],
+
+    features: [
+      "Data Preprocessing",
+      "Exploratory Data Analysis",
+      "Missing Value Imputation",
+      "Temporal Feature Engineering",
+      "Route Feature Engineering",
+      "Geographic Feature Engineering",
+      "Interaction Features",
+      "Random Forest Baseline",
+      "CatBoost Regression",
+      "Hyperparameter Tuning",
+      "Prediction Generation",
+      "Prediction Validation",
+    ],
+
+    challenges: [
+      "Preparing historical shipment data for machine learning",
+      "Handling missing values using training-set statistics",
+      "Engineering useful temporal and geographic features",
+      "Representing pickup-to-delivery routes",
+      "Comparing multiple regression models",
+      "Improving model performance through hyperparameter tuning",
+      "Validating generated prediction files",
+    ],
+
+    achievements: [
+      "Built an end-to-end freight-rate prediction pipeline",
+      "Established Random Forest as a baseline model",
+      "Improved performance using CatBoost",
+      "Developed a tuned CatBoost final model",
+      "Achieved an R² score of 0.8706",
+      "Achieved an MAE of 103.42",
+      "Validated 12,000 final predictions",
+      "Validated 31 fixed December predictions",
+      "Generated a December freight-rate prediction chart",
+    ],
+
+    lessonsLearned: [
+      "Importance of feature engineering for structured transportation data",
+      "Model comparison and evaluation techniques",
+      "Working with categorical variables using CatBoost",
+      "Hyperparameter tuning and early stopping",
+      "Building reproducible machine learning pipelines",
+      "Importance of prediction validation",
+    ],
+
+    screenshots: [
+      "/images/projects/freight-rate.png",
+    ],
+
+    github:
+      "https://github.com/57KayBel0/freight-rate-prediction",
+
+    demo: "",
+  },
+
+  {
+    id: 9,
+
+    overview:
+      "Fuel Route Optimizer is a Django REST API application designed to calculate driving routes and recommend cost-effective fuel stops. The application combines OpenRouteService routing, fuel-station data, geocoding, fuel-cost calculations, route caching, and an interactive Leaflet map to support long-distance trip planning.",
+
+    problem:
+      "Long-distance transportation requires drivers and fleet operators to consider route distance, vehicle fuel range, fuel consumption, fuel prices, and suitable refueling locations. Manually planning fuel stops can make trips less efficient and increase transportation costs.",
+
+    solution:
+      "Developed a Django REST API that calculates routes between locations, determines fuel checkpoints based on vehicle range, searches for nearby fuel stations, identifies cost-effective fuel stops, estimates fuel requirements and total fuel cost, and visualizes the resulting route using Leaflet.",
+
+    architecture: [
+      "Django REST API",
+      "Address Geocoding",
+      "OpenRouteService",
+      "Route Calculation",
+      "Fuel Station Data",
+      "Fuel Stop Selection",
+      "Fuel Consumption Calculation",
+      "Fuel Cost Calculation",
+      "Leaflet Map",
+      "Route Caching",
+      "SQLite Database",
+    ],
+
+    technologies: [
+      "Python",
+      "Django",
+      "Django REST Framework",
+      "JavaScript",
+      "Leaflet",
+      "OpenRouteService",
+      "SQLite",
+      "Docker",
+      "Geopy",
+      "Polyline",
+      "REST API",
+    ],
+
+    features: [
+      "Route Calculation",
+      "Address Geocoding",
+      "Fuel Checkpoint Detection",
+      "Nearby Fuel Station Search",
+      "Cost-Effective Fuel Stop Selection",
+      "Fuel Consumption Estimation",
+      "Total Fuel Cost Estimation",
+      "Interactive Leaflet Map",
+      "Route Visualization",
+      "Route Caching",
+      "Docker Support",
+    ],
+
+    challenges: [
+      "Integrating external routing services",
+      "Working with geographic coordinates",
+      "Determining appropriate fuel checkpoints",
+      "Finding suitable fuel stations along routes",
+      "Calculating fuel requirements and costs",
+      "Visualizing routes interactively",
+      "Reducing repeated routing requests through caching",
+    ],
+
+    achievements: [
+      "Built a Django REST API for route optimization",
+      "Integrated OpenRouteService for route generation",
+      "Implemented address geocoding",
+      "Implemented fuel checkpoint logic",
+      "Added nearby fuel-station search",
+      "Implemented cost-effective fuel-station selection",
+      "Added fuel consumption and cost calculations",
+      "Created interactive Leaflet route visualization",
+      "Implemented route caching",
+      "Added Docker support",
+      "Tested multiple long-distance routes",
+    ],
+
+    lessonsLearned: [
+      "Integrating external geospatial APIs",
+      "REST API development with Django",
+      "Working with geographic data",
+      "Route and fuel-stop optimization",
+      "Interactive map development",
+      "Caching external API results",
+      "Designing logistics-focused software",
+    ],
+
+    screenshots: [
+      "/images/projects/fuel-route.png",
+    ],
+
+    github:
+      "https://github.com/57KayBel0/fuel-route-optimizer",
 
     demo: "",
   },

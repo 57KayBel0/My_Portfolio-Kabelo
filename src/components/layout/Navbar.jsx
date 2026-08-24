@@ -63,7 +63,9 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-slate-900/80 backdrop-blur-xl shadow-xl border-b border-slate-800"
+          ? theme === "dark"
+            ? "bg-slate-900/80 backdrop-blur-xl shadow-xl border-b border-slate-800"
+            : "bg-white/90 backdrop-blur-xl shadow-xl border-b border-slate-200"
           : "bg-transparent"
       }`}
     >
@@ -94,14 +96,17 @@ export default function Navbar() {
                 duration={500}
                 offset={-80}
                 activeClass="text-cyan-400"
-                className="
+                className={`
                   relative
                   cursor-pointer
-                  text-slate-300
-                  hover:text-cyan-400
                   transition
                   group
-                "
+                  ${
+                    theme === "dark"
+                      ? "text-slate-300 hover:text-cyan-400"
+                      : "text-slate-700 hover:text-cyan-600"
+                  }
+                `}
               >
                 {item.name}
 
@@ -133,22 +138,32 @@ export default function Navbar() {
 
           <button
             onClick={toggleTheme}
-            aria-label="Toggle theme"
-            className="
+            aria-label={
+              theme === "dark"
+                ? "Switch to light mode"
+                : "Switch to dark mode"
+            }
+            className={`
               w-11
               h-11
               rounded-full
-              bg-slate-800
-              hover:bg-slate-700
               flex
               items-center
               justify-center
-              transition
-            "
+              transition-all
+              duration-300
+              ${
+                theme === "dark"
+                  ? "bg-slate-800 hover:bg-slate-700"
+                  : "bg-slate-200 hover:bg-slate-300"
+              }
+            `}
           >
-            {theme === "dark"
-              ? <FaSun className="text-yellow-400" />
-              : <FaMoon className="text-cyan-400" />}
+            {theme === "dark" ? (
+              <FaSun className="text-yellow-400" />
+            ) : (
+              <FaMoon className="text-slate-700" />
+            )}
           </button>
 
           <a
